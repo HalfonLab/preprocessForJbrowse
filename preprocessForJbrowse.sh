@@ -1,6 +1,10 @@
 #!/bin/bash
+#(c) Hasiba Asma
+#October 2022
+#This shell script can be used to create required files for running jbrowse 
 
-
+#example command:
+#./preprocessForJbrowse.sh FBgn0000606 dmel-all-no-analysis-r6.18.gff mappedOnly_dmel-all-chromosome-r6.05.fa.2.7.7.80.10.50.500.mask gene-LOC660343 Tcas_5.2_genomic_Feb2022.gff mappedOnly_TCAS_allchrs.fna.2.7.7.80.10.50.500.mask 13
 #check number of arguments
 if [ "$#" -ne 7 ]; then
 	echo "Usage: $0 s1geneName s1GFF_file s1FASTA_file s2geneName s2GFF_file s2FASTA_file word_size"
